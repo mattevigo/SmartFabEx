@@ -168,7 +168,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-aN-c28">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="511"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Inserire un NavigationController nella storyboard, assegnare come root view controller il view controller dell'esercizio precedente. Aggiungere una segue di tipo push al Button con label "Successivo" contenuto nel view controller dell'esercizio 1 in modo da navigare a questo view controller</string>
+                                        <string key="text">Inserire un NavigationController nella storyboard, assegnare come root view controller il view controller dell'esercizio precedente. Aggiungere una segue di tipo "Show" al Button con label "Successivo" contenuto nel view controller dell'esercizio 1 in modo da navigare a questo view controller</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -305,10 +305,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-Es-Qwp">
                                 <rect key="frame" x="8" y="80" width="359" height="144"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Completare la classe ExTableViewController inserendo il codice necessario per visualizzare correttamente le strutture dati." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-5l-Gys">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-5l-Gys">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Completare la classe ExTableViewController inserendo il codice necessario per visualizzare correttamente le strutture dati. Aggiungere una segue al Button TableView di tipo "Show" in modo da navigare a questo view controller quando premuto.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
