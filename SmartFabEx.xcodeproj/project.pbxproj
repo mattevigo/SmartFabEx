@@ -15,6 +15,8 @@
 		9F0BDE1020908697003BC836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BDE0E20908697003BC836 /* LaunchScreen.storyboard */; };
 		9F0BDE1320908697003BC836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE1220908697003BC836 /* main.m */; };
 		9F0BDE1B2090D28B003BC836 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE1A2090D28B003BC836 /* ModalViewController.m */; };
+		9F0BDE212090DB57003BC836 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE202090DB57003BC836 /* ColorViewController.m */; };
+		9F0BDE242090DD10003BC836 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE232090DD10003BC836 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		9F0BDE1220908697003BC836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F0BDE192090D28B003BC836 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		9F0BDE1A2090D28B003BC836 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		9F0BDE1F2090DB57003BC836 /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		9F0BDE202090DB57003BC836 /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		9F0BDE222090DD10003BC836 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9F0BDE232090DD10003BC836 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,10 @@
 				9F0BDE0920908696003BC836 /* SmartFabEx.xcdatamodeld */,
 				9F0BDE192090D28B003BC836 /* ModalViewController.h */,
 				9F0BDE1A2090D28B003BC836 /* ModalViewController.m */,
+				9F0BDE1F2090DB57003BC836 /* ColorViewController.h */,
+				9F0BDE202090DB57003BC836 /* ColorViewController.m */,
+				9F0BDE222090DD10003BC836 /* TableViewController.h */,
+				9F0BDE232090DD10003BC836 /* TableViewController.m */,
 			);
 			path = SmartFabEx;
 			sourceTree = "<group>";
@@ -154,6 +164,8 @@
 				9F0BDE1B2090D28B003BC836 /* ModalViewController.m in Sources */,
 				9F0BDE1320908697003BC836 /* main.m in Sources */,
 				9F0BDE0B20908696003BC836 /* SmartFabEx.xcdatamodeld in Sources */,
+				9F0BDE242090DD10003BC836 /* TableViewController.m in Sources */,
+				9F0BDE212090DB57003BC836 /* ColorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
