@@ -14,6 +14,7 @@
 		9F0BDE0D20908697003BC836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BDE0C20908697003BC836 /* Assets.xcassets */; };
 		9F0BDE1020908697003BC836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0BDE0E20908697003BC836 /* LaunchScreen.storyboard */; };
 		9F0BDE1320908697003BC836 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE1220908697003BC836 /* main.m */; };
+		9F0BDE1B2090D28B003BC836 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BDE1A2090D28B003BC836 /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		9F0BDE0F20908697003BC836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F0BDE1120908697003BC836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F0BDE1220908697003BC836 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F0BDE192090D28B003BC836 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		9F0BDE1A2090D28B003BC836 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				9F0BDE1120908697003BC836 /* Info.plist */,
 				9F0BDE1220908697003BC836 /* main.m */,
 				9F0BDE0920908696003BC836 /* SmartFabEx.xcdatamodeld */,
+				9F0BDE192090D28B003BC836 /* ModalViewController.h */,
+				9F0BDE1A2090D28B003BC836 /* ModalViewController.m */,
 			);
 			path = SmartFabEx;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				9F0BDE0520908696003BC836 /* ViewController.m in Sources */,
 				9F0BDE0220908696003BC836 /* AppDelegate.m in Sources */,
+				9F0BDE1B2090D28B003BC836 /* ModalViewController.m in Sources */,
 				9F0BDE1320908697003BC836 /* main.m in Sources */,
 				9F0BDE0B20908696003BC836 /* SmartFabEx.xcdatamodeld in Sources */,
 			);

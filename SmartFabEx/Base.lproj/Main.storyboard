@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1196" y="110.19490254872565"/>
         </scene>
-        <!--View Controller-->
+        <!--Modal View Controller-->
         <scene sceneID="N2M-vg-nF7">
             <objects>
-                <viewController id="S71-3L-d8Z" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="S71-3L-d8Z" customClass="ModalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mAa-lc-Vla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
