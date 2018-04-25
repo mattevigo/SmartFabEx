@@ -41,33 +41,32 @@
                                         <state key="normal" title="Successivo"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.48487839170000002" green="1" blue="0.6791272236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="29b-g0-PoH"/>
                                     <constraint firstItem="a5E-fC-VLz" firstAttribute="centerY" secondItem="XXW-Zg-7Mp" secondAttribute="centerY" id="gnn-b8-SIE"/>
                                     <constraint firstItem="a5E-fC-VLz" firstAttribute="centerX" secondItem="XXW-Zg-7Mp" secondAttribute="centerX" id="vZz-kU-sHe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-r8-Esc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-r8-Esc" userLabel="Ex1Container">
                                 <rect key="frame" x="0.0" y="232" width="375" height="375"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-8c-XBJ">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-8c-XBJ" userLabel="Rosso">
                                         <rect key="frame" x="8" y="0.0" width="108" height="367"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.26024710366176063" blue="0.16105316864315988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-w1-0zf">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-w1-0zf" userLabel="Verde">
                                         <rect key="frame" x="133" y="0.0" width="108" height="367"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.28238101041413621" green="1" blue="0.34464758167480325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-m5-MD0">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-m5-MD0" userLabel="Blue">
                                         <rect key="frame" x="259" y="0.0" width="108" height="367"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.17305093619280953" green="0.26191169205661857" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="A58-r8-Esc" secondAttribute="height" multiplier="1:1" id="7BN-Q3-e7r"/>
                                 </constraints>
@@ -75,9 +74,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndw-38-wqm">
                                 <rect key="frame" x="8" y="80" width="359" height="144"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TODO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K44-Lg-dHh">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K44-Lg-dHh">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="144"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">La view sottostante di colore nero di nome Ex1Container contiene 3 view di nome Rosso, Verde, Blue. Posizionare e dimensionare le 3 view figle in modo che: 1) Le 3 view sono siano della stessa larghezza (width) e altezza (height); 2) L'intera superfice di Ex1Container sia coperta dalle 3 view (il colore nero non deve essere più visibile)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
