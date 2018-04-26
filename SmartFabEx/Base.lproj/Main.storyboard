@@ -53,25 +53,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A58-r8-Esc" userLabel="Ex1Container">
                                 <rect key="frame" x="0.0" y="232" width="375" height="375"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-8c-XBJ" userLabel="Rosso">
-                                        <rect key="frame" x="8" y="0.0" width="108" height="367"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-8c-XBJ" userLabel="Rosso">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="375"/>
                                         <color key="backgroundColor" red="1" green="0.26024710366176063" blue="0.16105316864315988" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-w1-0zf" userLabel="Verde">
-                                        <rect key="frame" x="133" y="0.0" width="108" height="367"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-w1-0zf" userLabel="Verde">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="375"/>
                                         <color key="backgroundColor" red="0.28238101041413621" green="1" blue="0.34464758167480325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-m5-MD0" userLabel="Blue">
-                                        <rect key="frame" x="259" y="0.0" width="108" height="367"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-m5-MD0" userLabel="Blue">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="375"/>
                                         <color key="backgroundColor" red="0.17305093619280953" green="0.26191169205661857" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yTX-m5-MD0" secondAttribute="trailing" id="2Rw-ej-PRy"/>
                                     <constraint firstAttribute="width" secondItem="A58-r8-Esc" secondAttribute="height" multiplier="1:1" id="7BN-Q3-e7r"/>
+                                    <constraint firstItem="JWR-8c-XBJ" firstAttribute="leading" secondItem="A58-r8-Esc" secondAttribute="leading" id="J24-I2-jCN"/>
+                                    <constraint firstItem="yTX-m5-MD0" firstAttribute="leading" secondItem="P9V-w1-0zf" secondAttribute="trailing" id="Jex-oL-lbE"/>
+                                    <constraint firstItem="JWR-8c-XBJ" firstAttribute="width" secondItem="P9V-w1-0zf" secondAttribute="width" id="R0R-aL-jud"/>
+                                    <constraint firstItem="yTX-m5-MD0" firstAttribute="top" secondItem="A58-r8-Esc" secondAttribute="top" id="U3V-CB-v8J"/>
+                                    <constraint firstAttribute="bottom" secondItem="P9V-w1-0zf" secondAttribute="bottom" id="ZzY-5b-fhv"/>
+                                    <constraint firstAttribute="bottom" secondItem="yTX-m5-MD0" secondAttribute="bottom" id="hFa-uK-VWS"/>
+                                    <constraint firstAttribute="bottom" secondItem="JWR-8c-XBJ" secondAttribute="bottom" id="nES-Fj-F9H"/>
+                                    <constraint firstItem="P9V-w1-0zf" firstAttribute="width" secondItem="yTX-m5-MD0" secondAttribute="width" id="qzZ-xt-tdh"/>
+                                    <constraint firstItem="JWR-8c-XBJ" firstAttribute="top" secondItem="A58-r8-Esc" secondAttribute="top" id="sRC-E2-81g"/>
+                                    <constraint firstItem="P9V-w1-0zf" firstAttribute="top" secondItem="A58-r8-Esc" secondAttribute="top" id="sxk-OV-OZo"/>
+                                    <constraint firstItem="P9V-w1-0zf" firstAttribute="leading" secondItem="JWR-8c-XBJ" secondAttribute="trailing" id="xnV-jB-RhQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndw-38-wqm">
