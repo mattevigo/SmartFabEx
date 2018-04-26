@@ -16,6 +16,7 @@
 {
     NSArray *_colorArr;
     NSDictionary *_colorDict;
+    __weak IBOutlet UITableView *_tableView;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +27,9 @@
                    @"Blue":[UIColor blueColor],
                    @"Green":[UIColor greenColor],
                    };
+    
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,22 +40,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _colorArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"color" forIndexPath:indexPath];
+    if(!cell){
+        cell = [[UITableViewCell alloc] init];
+    }
     
     //TODO configurare opportunamente la cella in modo che si capisca quale colore essa rappresenta
     //TIP: la variabile "_colorDict" può risultare utile qualora si voglia colorare la view della cella in ase al valore dell'array...
+    cell.contentView.backgroundColor = _colorDict[_colorArr[indexPath.row]];
     
-    return nil;
+    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

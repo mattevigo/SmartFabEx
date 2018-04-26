@@ -184,6 +184,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRx-T2-WP7">
                                         <rect key="frame" x="153" y="46" width="69" height="30"/>
                                         <state key="normal" title="TableView"/>
+                                        <connections>
+                                            <segue destination="WOU-lX-hHc" kind="show" id="18D-2Q-8OL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -316,16 +319,16 @@
             </objects>
             <point key="canvasLocation" x="1943" y="110"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="OYw-Jt-8bz">
             <objects>
-                <viewController id="WOU-lX-hHc" sceneMemberID="viewController">
+                <viewController id="WOU-lX-hHc" customClass="TableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAB-j5-MeK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45A-N8-aEy">
-                                <rect key="frame" x="8" y="28" width="359" height="44"/>
+                                <rect key="frame" x="8" y="72" width="359" height="0.0"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esercizio 4: TableView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttw-ln-7wW">
                                         <rect key="frame" x="94" y="11" width="170" height="21"/>
@@ -355,7 +358,7 @@
                                 <rect key="frame" x="0.0" y="232" width="375" height="435"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0d6-Fl-ado">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="color" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="color" id="0d6-Fl-ado">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0d6-Fl-ado" id="heG-W1-mJm">
@@ -389,6 +392,8 @@
                         <viewLayoutGuide key="safeArea" id="QDf-Qw-beZ"/>
                     </view>
                     <connections>
+                        <outlet property="_tableView" destination="fSe-CZ-He9" id="aKL-KG-Wd7"/>
+                        <outlet property="view" destination="yAB-j5-MeK" id="j7t-im-qtP"/>
                         <segue destination="Mfn-eI-huH" kind="show" identifier="colorSegue" id="Qip-A3-89C"/>
                     </connections>
                 </viewController>
@@ -405,7 +410,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-GJ-hFN">
-                                <rect key="frame" x="8" y="20" width="359" height="44"/>
+                                <rect key="frame" x="8" y="64" width="359" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esercizio 5: Master/Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJB-6b-KVG">
                                         <rect key="frame" x="78" y="11" width="203" height="21"/>
@@ -422,7 +427,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ujd-zB-QZg">
-                                <rect key="frame" x="8" y="72" width="359" height="144"/>
+                                <rect key="frame" x="8" y="116" width="359" height="144"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J8L-GG-eA8">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="144"/>
@@ -439,7 +444,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkT-B5-FwE">
-                                <rect key="frame" x="0.0" y="224" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="268" width="375" height="399"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
