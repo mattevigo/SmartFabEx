@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wLd-48-dcc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8T-hT-IRe">
-                                <rect key="frame" x="8" y="28" width="359" height="44"/>
+                                <rect key="frame" x="8" y="72" width="359" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esercizio 1: Constraints" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQH-4u-rlw">
                                         <rect key="frame" x="90" y="12" width="178" height="21"/>
@@ -42,6 +42,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-fC-VLz">
                                         <rect key="frame" x="148" y="15" width="78" height="30"/>
                                         <state key="normal" title="Successivo"/>
+                                        <connections>
+                                            <segue destination="PXt-VZ-jcO" kind="show" id="blr-cm-HOs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -84,10 +87,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndw-38-wqm">
-                                <rect key="frame" x="8" y="80" width="359" height="144"/>
+                                <rect key="frame" x="8" y="124" width="359" height="100"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K44-Lg-dHh">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="144"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">La view sottostante di colore nero di nome Ex1Container contiene 3 view di nome Rosso, Verde, Blue. Posizionare e dimensionare le 3 view figle in modo che: 1) Le 3 view sono siano della stessa larghezza (width) e altezza (height); 2) L'intera superfice di Ex1Container sia coperta dalle 3 view (il colore nero non deve essere più visibile)</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -121,10 +124,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Q3r-bm-b84"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="422" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zcb-v4-dwu">
+            <objects>
+                <navigationController id="wLd-48-dcc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OAV-YS-kmL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RCR-HM-iLK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWD-DT-pFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-665"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KSV-sd-wOO">
@@ -135,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-Rz-mae">
-                                <rect key="frame" x="8" y="28" width="359" height="44"/>
+                                <rect key="frame" x="8" y="72" width="359" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esercizio 2: Navigation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-DL-Y7j">
                                         <rect key="frame" x="92" y="12" width="174" height="21"/>
@@ -172,10 +192,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhy-Pr-xsF">
-                                <rect key="frame" x="8" y="80" width="359" height="486"/>
+                                <rect key="frame" x="8" y="124" width="359" height="442"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t7m-aN-c28">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="511"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="467"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Inserire un NavigationController nella storyboard, assegnare come root view controller il view controller dell'esercizio precedente. Aggiungere una segue di tipo "Show" al Button con label "Successivo" contenuto nel view controller dell'esercizio 1 in modo da navigare a questo view controller</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
