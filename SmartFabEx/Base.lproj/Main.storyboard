@@ -177,6 +177,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIk-GT-uDe">
                                         <rect key="frame" x="162" y="8" width="51" height="30"/>
                                         <state key="normal" title="Modale"/>
+                                        <connections>
+                                            <segue destination="S71-3L-d8Z" kind="presentation" id="xzr-0b-LgT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRx-T2-WP7">
                                         <rect key="frame" x="153" y="46" width="69" height="30"/>
@@ -262,6 +265,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a29-cs-ArV">
                                         <rect key="frame" x="166" y="15" width="44" height="30"/>
                                         <state key="normal" title="Chiudi"/>
+                                        <connections>
+                                            <action selector="close:" destination="S71-3L-d8Z" eventType="touchUpInside" id="auK-9S-boH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
