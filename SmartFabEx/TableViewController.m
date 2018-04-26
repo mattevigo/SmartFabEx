@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "ColorViewController.h"
 
 @interface TableViewController ()
 
@@ -17,6 +18,7 @@
     NSArray *_colorArr;
     NSDictionary *_colorDict;
     __weak IBOutlet UITableView *_tableView;
+    NSString *_selectedColor;
 }
 
 - (void)viewDidLoad {
@@ -61,13 +63,19 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    _selectedColor = _colorArr[indexPath.row];
+    [self performSegueWithIdentifier:@"colorSegue" sender:self];
 }
 
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //TODO Gestire opportunamente il colore selezionato
+    if([segue.identifier isEqualToString:@"colorSegue"]){
+        ColorViewController *cvc = segue.destinationViewController;
+        cvc.color = _colorDict[_selectedColor];
+        _selectedColor = nil;
+    }
 }
 
 @end

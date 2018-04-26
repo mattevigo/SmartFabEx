@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     //TODO colorare opportunamente colorView in base al colore selezionato
+    self.colorView.backgroundColor = self.color;
 }
 
 - (void)didReceiveMemoryWarning {
